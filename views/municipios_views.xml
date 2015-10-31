@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_unefa_municipios_form">
+            <field name="name">Unefa_municipios_form</field>
+            <field name="model">unefa.municipios</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="municipios">
+                    <group>
+                        <field name="nombre"  style="width:30%"/>
+                        <field name="active"/>
+                    </group>
+                </form>
+            </field>
+        
+        </record>
+        
+        <record model="ir.ui.view" id="view_unefa_municipios_tree">
+            <field name="name">Unefa_municipios_tree</field>
+            <field name="model">unefa.municipios</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="municipios">
+                   
+                        <field name="nombre"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_unefa_municipios">
+            <field name="name">Unefa municipios</field>
+            <field name="res_model">unefa.municipios</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem name="Municipios" id="menu_municipios"  action="action_unefa_municipios" parent="conf_direccion" sequence="10"/>
+        
+    </data>
+</openerp>

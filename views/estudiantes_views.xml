@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_unefa_estudiantes_form">
+            <field name="name">Unefa_estudiantes_form</field>
+            <field name="model">unefa.estudiantes</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Estudiantes">
+                    <group>
+                        <field name="nombre" style="width:30%"/>
+                        <field name="apellido" style="width:30%"/>
+                        <field name="cedula" />
+                        <field name="fecha_nacimineto"/>
+                        <field name="estado_id"  style="width:30%"/>
+                        <field name="municipio_id"  style="width:30%"/>
+                        <field name="parroquia_id"  style="width:30%"/>
+                        <field name="sector"  style="width:30%"/>
+                        <field name="calle"  style="width:30%"/>
+                        <field name="active"/>
+                    </group>
+                </form>
+            
+            </field>
+        
+        </record>
+        
+        <record model="ir.ui.view" id="view_unefa_estudiantes_tree">
+            <field name="name">Unefa_estudiantes_tree</field>
+            <field name="model">unefa.estudiantes</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Estudiantes">
+                   
+                        <field name="nombre"/>
+                        <field name="apellido"/>
+                        <field name="cedula"/>
+                        <field name="fecha_nacimineto"/>
+                        <field name="estado_id"/>
+                        <field name="active"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_unefa_estudiantes">
+            <field name="name">Unefa Estudiantes</field>
+            <field name="res_model">unefa.estudiantes</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem name="Unefa" id="menu_unefa" sequence="10"/>
+        <menuitem name="Inicio" id="menu_inicio"  parent="menu_unefa" sequence="10"/>
+        <menuitem name="Estudiantes" id="menu_estudiantes"  action="action_unefa_estudiantes" parent="menu_inicio" sequence="10"/>
+        
+    </data>
+</openerp>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_unefa_estados_form">
+            <field name="name">Unefa_estados_form</field>
+            <field name="model">unefa.estados</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Estados">
+                    <group>
+                        <field name="nombre"  style="width:30%"/>
+                        <field name="active"/>
+                    </group>
+                </form>
+            </field>
+        
+        </record>
+        
+        <record model="ir.ui.view" id="view_unefa_estados_tree">
+            <field name="name">Unefa_estados_tree</field>
+            <field name="model">unefa.estados</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Estados">
+                   
+                        <field name="nombre"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="action_unefa_estados">
+            <field name="name">Unefa Estados</field>
+            <field name="res_model">unefa.estados</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem name="Configuración de Dirección" id="conf_direccion"  parent="menu_unefa" sequence="10"/>
+        <menuitem name="Estados" id="menu_estados"  action="action_unefa_estados" parent="conf_direccion" sequence="10"/>
+        
+    </data>
+</openerp>
