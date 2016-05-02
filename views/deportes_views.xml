@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-        <record model="ir.ui.view" id="view_unefa_estados_form">
-            <field name="name">Unefa_estados_form</field>
-            <field name="model">unefa.estados</field>
+        <record model="ir.ui.view" id="view_unefa_deportes_form">
+            <field name="name">unefa_deportes_form</field>
+            <field name="model">unefa.deportes</field>
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="Estados">
@@ -16,9 +16,9 @@
         
         </record>
         
-        <record model="ir.ui.view" id="view_unefa_estados_tree">
-            <field name="name">Unefa_estados_tree</field>
-            <field name="model">unefa.estados</field>
+        <record model="ir.ui.view" id="view_unefa_deportes_tree">
+            <field name="name">unefa_deportes_tree</field>
+            <field name="model">unefa.deportes</field>
             <field name="type">tree</field>
             <field name="arch" type="xml">
                 <tree string="Estados">
@@ -28,15 +28,15 @@
             </field>
         </record>
         
-        <record model="ir.actions.act_window" id="action_unefa_estados">
+        <record model="ir.actions.act_window" id="action_unefa_deportes">
             <field name="name">Unefa Estados</field>
-            <field name="res_model">unefa.estados</field>
+            <field name="res_model">unefa.deportes</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
         </record>
         
-        <menuitem name="Configuración de Dirección" id="conf_direccion"  parent="conf_menu" sequence="10"/>
-        <menuitem name="Estados" id="menu_estados"  action="action_unefa_estados" parent="conf_direccion" sequence="10"/>
+        <menuitem name="Configuración " id="conf_menu"  parent="menu_unefa" sequence="10"/>
+        <menuitem name="Deportes" id="menu_deportes"  action="action_unefa_deportes" parent="conf_menu" sequence="10"/>
         
     </data>
 </openerp>

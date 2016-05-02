@@ -9,6 +9,7 @@
                 <form string="parroquias">
                     <group>
                         <field name="nombre"  style="width:30%"/>
+                        <field name="municipio_id"  style="width:30%"/>
                         <field name="active"/>
                     </group>
                 </form>

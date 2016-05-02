@@ -2,14 +2,14 @@
 
 from openerp.osv import fields, osv
 
-class parroquias(osv.osv):
-    _name='unefa.parroquias'
+class deportes(osv.osv):
+    _name='unefa.deportes'
     _rec_name='nombre'
     
     _columns={
-        'nombre':fields.char('Nombre de la Parroquias',size=80,required=True,help='Nombre de la parroquias a registrar'),
+        'nombre':fields.char('Nombre del deporte',size=80,required=True,help='Nombre del deporte a registrar'),
         'active':fields.boolean('Activo',help='Si esta activo el motor lo incluira en la vista...'),
-        'municipio_id':fields.many2one('unefa.municipios','Municipio')
+  
     }
     
     _defaults={

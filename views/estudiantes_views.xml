@@ -6,21 +6,41 @@
             <field name="model">unefa.estudiantes</field>
             <field name="type">form</field>
             <field name="arch" type="xml">
+				<sheet>
                 <form string="Estudiantes">
-                    <group>
-                        <field name="nombre" style="width:30%"/>
-                        <field name="apellido" style="width:30%"/>
+                    <group col="4">
+                        <field name="nombre" />
+                        <field name="apellido" style="width:80%"/>
                         <field name="cedula" />
                         <field name="fecha_nacimineto"/>
-                        <field name="estado_id"  style="width:30%"/>
-                        <field name="municipio_id"  style="width:30%"/>
-                        <field name="parroquia_id"  style="width:30%"/>
+                        <field name="estado_id"   on_change="pulsar_estado()"/>
+                        <field 
+							name="municipio_id"  
+							style="width:30%" 
+							domain="[('estado_id','=',estado_id)]"
+							on_change="pulsar_municipio()"/>
+                        <field name="parroquia_id"  style="width:30%" domain="[('municipio_id','=',municipio_id)]"/>
                         <field name="sector"  style="width:30%"/>
                         <field name="calle"  style="width:30%"/>
                         <field name="active"/>
                     </group>
+                    <notebook>
+						<page string="Desportes de Gusto">
+							<field name="deportes_ids" widget="many2many_tags"/>
+						</page>
+						<page string="Familiares de Contactos">
+							<field name="familiar_contacto_ids">
+								<tree create="1">
+									<field name="nombre"/>
+									<field name="apellido"/>
+									<field name="cedula"/>
+									<field name="estado_id"/>
+								</tree>
+							</field>
+						</page>
+                    </notebook>
                 </form>
-            
+                </sheet>
             </field>
         
         </record>

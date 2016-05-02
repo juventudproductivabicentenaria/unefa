@@ -9,6 +9,7 @@
                 <form string="municipios">
                     <group>
                         <field name="nombre"  style="width:30%"/>
+                        <field name="estado_id"  style="width:30%"/>
                         <field name="active"/>
                     </group>
                 </form>
