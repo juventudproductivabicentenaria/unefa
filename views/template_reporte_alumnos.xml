@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+      <template id="unefa.estudiante_unefa" name=" Reporte de alumnos">
+        <t t-call="report.html_container">
+             <t t-foreach="docs" t-as="o">
+                  <t t-call="report.external_layout">
+                       <div class="page">
+                       <h2><t t-esc="o.nombre"></t> <t t-esc="o.apellido"></t></h2>
+                    <table class="table">
+                        <tbody>
+                          <tr>
+                            <td><d>Fecha de nacimiento:</d></td>
+                            <td> <t t-esc="o.fecha_nacimineto"></t></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" align="center"><h4>Dirección:</h4></td>
+                          </tr>
+                          <tr>
+                            <td><d>Estado:</d></td>
+                            <td> <t t-esc="o.estado_id.nombre"></t></td>
+                          </tr>
+                          <tr>
+                            <td><d>Municipio:</d></td>
+                            <td> <t t-esc="o.municipio_id.nombre"></t></td>
+                          </tr>
+                          <tr>
+                            <td><d>Parroquia:</d></td>
+                            <td> <t t-esc="o.parroquia_id.nombre"></t></td>
+                          </tr>
+                          <tr>
+                            <td><d>Sector:</d></td>
+                            <td> <t t-esc="o.sector"></t></td>
+                          </tr>
+                          <tr>
+                            <td><d>Calle:</d></td>
+                            <td> <t t-esc="o.calle"></t></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      
+<!--
+                      relaciones many2many
+                      
+-->
+                 <t t-call="unefa.deportes_estudiante"/>
+
+<!--
+            relacion one2many
+-->
+    <t t-call="unefa.familiar_contactos"/>
+                       </div>
+                  </t>
+             </t>
+        </t>
+      </template>
+      
+<!--
+      otro template
+-->
+
+<template id="unefa.deportes_estudiante" name=" Realcion many2may deportes">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Deportes</th>
+          </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td> 
+                        <t t-foreach="o.deportes_ids" t-as="deporte">
+                            <t t-esc="deporte.nombre"> </t>, 
+                        </t>
+                    </td>
+                </tr>
+        </tbody>
+      </table>
+</template>
+
+<!--
+temaplate del one2many
+-->
+<template id="unefa.familiar_contactos" name=" Realcion one2many Familia de contatos">
+   <div class="row">
+        <div class="col-md-12" align="center"> <h4>Grupo Familiar</h4></div>
+   </div>
+   <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Cedula</th>
+          </tr>
+        </thead>
+        <tbody>
+            <t t-foreach="o.familiar_contacto_ids" t-as="familias"> 
+                <t t-foreach="familias" t-as="familiar">
+                <tr>
+                <td><t t-esc="familiar.nombre"></t></td>
+                <td><t t-esc="familiar.apellido"></t></td>
+                <td><t t-esc="familiar.cedula"></t></td>
+                </tr>
+                </t>
+            </t>
+        </tbody>
+    </table>
+</template>
+    </data>
+</openerp>
