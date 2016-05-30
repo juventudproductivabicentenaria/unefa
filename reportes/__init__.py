@@ -1,5 +1,1 @@
-# -*- encoding: utf-8 -*-
-
-from . import reporte_unefa
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+import reportes_alumnos

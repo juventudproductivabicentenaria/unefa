@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+     <data>
+         <record id="unefa_reporte_alumnno_wizard_view" model="ir.ui.view">
+            <field name="name">Reporte de Alumnos con wizard</field>
+            <field name="model">unefa.reporte_alumnos_wizard</field>
+            <field name="arch" type="xml">
+                <form string="Reportes de alumnos">
+                    <group>
+                         <field name="reporte_nombre" />
+                         <field name="alumnos_ids" />
+                    </group>
+                    <footer>
+                        <button string="Reporte .pdf" name="reporte_alumnnos_pdf" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cerrar" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+         
+        <record id="action_unefa_reporte_alumnno_wizard" model="ir.actions.act_window">
+            <field name="name">Reporte de Alumnos</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">unefa.reporte_alumnos_wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="unefa_reporte_alumnno_wizard_view"/>
+            <field name="target">new</field>
+        </record>
+         
+    <menuitem
+            name="Reportes de alumnos"
+            action="action_unefa_reporte_alumnno_wizard"
+            id="menu_unefa_reporte_alumnno_wizard"
+            parent="menu_inicio"/>
+     </data>
+</openerp>

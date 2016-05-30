@@ -1,7 +1,7 @@
 {
     'name':'Estudiantes Unefa',
     'version': '1.0',
-    'depends': ['base_setup'],
+    'depends': ['base_setup','website'],
     'author': 'IRP unefa (Comunidad Bachaco.ve)',
     'category': '',
     'description': """
@@ -16,8 +16,10 @@
         "views/parroquias_views.xml",
         "views/deportes_views.xml",
         "views/familiares_contactos_views.xml",
-        "views/reporte_estudiante.xml",
-        "reportes/estudiante_unefa.xml",
+        "views/template_reporte_alumnos.xml",
+        "views/template_reporte_alumnos_wizard.xml",
+        "wizard/reporte_alumnos_wizard.xml",
+        "reportes/reportes_alumnos.xml",
         ],
     'installable': True,
     'auto_install': False,
