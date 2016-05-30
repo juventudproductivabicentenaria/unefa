@@ -10,5 +10,24 @@
         name="unefa.estudiante_unefa"
         menu="True"
         />
+        
+        <report 
+        id="reporte_alumnos_wizard_report"
+        string="Reporte Alumnos wizard"
+        model="unefa.estudiantes"
+        report_type="qweb-pdf"
+        file="unefa.estudiante_unefa_wizard_qweb"
+        name="unefa.estudiante_unefa_wizard_qweb"
+        menu="False"
+        />
+        
+        <report 
+            id="account_transfers"
+            model="unefa.estudiantes"
+            name="unefa.estudiantes"
+            string="Transfers"
+            xml="unefa/reportes/transfer.xml"
+            xsl="unefa/reportes/transfer.xsl"
+        />
     </data>
 </openerp>

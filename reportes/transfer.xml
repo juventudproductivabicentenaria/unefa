@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transfer-list>
+    <transfer type="fields" name="id">
+        <name type="field" name="nombre"/>
+    </transfer>
+</transfer-list>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+      <template id="unefa.estudiante_unefa_wizard_qweb" name=" Reporte de alumnos con wizard">
+        <t t-call="report.html_container">
+                  <t t-call="report.external_layout">
+                       <div class="page">
+                       <h1><t t-esc="data['titulo']"></t></h1>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Cédula</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        <t t-foreach="get_data_estudiantes(data['ids'])" t-as="estudiante">
+                            <tr t-if="len(estudiante['deportes_ids'])>0">
+                                <td><t t-esc="estudiante['nombre']"></t></td>
+                                <td><t t-esc="estudiante['apellido']"></t></td>
+                                <td><t t-esc="estudiante['cedula']"></t></td>
+                            </tr>
+                            
+                        </t>
+                        </tbody>
+                    </table>
+                       </div>
+                  </t>
+        </t>
+      </template>
+    </data>
+</openerp>

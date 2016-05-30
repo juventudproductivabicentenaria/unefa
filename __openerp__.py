@@ -17,7 +17,9 @@
         "views/deportes_views.xml",
         "views/familiares_contactos_views.xml",
         "views/template_reporte_alumnos.xml",
-        "reportes/reportes_alumnos.xml"
+        "views/template_reporte_alumnos_wizard.xml",
+        "wizard/reporte_alumnos_wizard.xml",
+        "reportes/reportes_alumnos.xml",
         ],
     'installable': True,
     'auto_install': False,
