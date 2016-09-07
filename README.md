@@ -9,4 +9,6 @@ Entre los temas que compartimos son los siguiente:<p>
 |[![IMAGE ALT TEXT](https://i.ytimg.com/vi/jgCUW7w-G3o/hqdefault.jpg?custom=true&w=120&h=90&jpg444=true&jpgq=90&sp=68&sigh=M-LO7Zf7QxmdG5iUogtG7E9kZ_s)](https://youtu.be/jgCUW7w-G3o?list=PLZHhaK4KCZZyocy6-b0Kq7LSrHP4cYV9q "Introdución a Odoo")  | 15       | 150€   |
 | Item 2   | 3250     | 23,65€ |
 
+<iframe width="854" height="480" src="https://www.youtube.com/embed/vq8JRVj43AY?list=PLZHhaK4KCZZyocy6-b0Kq7LSrHP4cYV9q" frameborder="0" allowfullscreen></iframe>
+
    
