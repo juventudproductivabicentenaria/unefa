@@ -7,7 +7,8 @@ Entre los temas que compartimos son los siguiente:<p>
 | -------------------- | 
 | [![IMAGE ALT TEXT](https://i.ytimg.com/vi/jgCUW7w-G3o/hqdefault.jpg?custom=true&w=120&h=90&jpg444=true&jpgq=90&sp=68&sigh=M-LO7Zf7QxmdG5iUogtG7E9kZ_s)](https://youtu.be/jgCUW7w-G3o?list=PLZHhaK4KCZZyocy6-b0Kq7LSrHP4cYV9q "Introdución a Odoo") |
 <p>
-| Col1         | Col2     | Col3          |
-| :----------- | :------: | ------------: |
-| Izquierda | Centrado | Derecha |
-| blah         | blah     | blah          |
+
+    |Col1         | Col2     | Col3          |
+    | :----------- | :------: | ------------: |
+    | Izquierda | Centrado | Derecha |
+    | blah         | blah     | blah          |
