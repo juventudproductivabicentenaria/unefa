@@ -1,7 +1,7 @@
 ![logo](https://yt3.ggpht.com/-Pdd2Yc_w1cs/AAAAAAAAAAI/AAAAAAAAAAA/zPOludtwSjU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg,"Logo de juventud Productiva")  
 # curso odoo v8 <p>
 Este repositorio es el producto de un conjuntos de video tutoriales de odoo version 8,
-que disponibles en el cana de Youtube de [Juventud Prductiva](https://www.youtube.com/watch?v=jgCUW7w-G3o&list=PLZHhaK4KCZZyocy6-b0Kq7LSrHP4cYV9q)<p>
+que esta disponibles en el cana de Youtube de [Juventud Prductiva](https://www.youtube.com/watch?v=jgCUW7w-G3o&list=PLZHhaK4KCZZyocy6-b0Kq7LSrHP4cYV9q)<p>
 Entre los temas que compartimos son los siguiente:<p>
 
 | Introducción a Odoo |  Ejecutar Odoo para desarrolladores | 1.Crear Objeto Estudiantes |
@@ -19,8 +19,3 @@ Entre los temas que compartimos son los siguiente:<p>
 | 5. Domain en los .xml | 6. Relación many2many | 7. Relación one2many |
 | :-------: | :------: | :-----: |
 |[![IMAGE ALT TEXT](https://i.ytimg.com/vi/TV1uMyFlf_s/hqdefault.jpg?custom=true&w=120&h=90&jpg444=true&jpgq=90&sp=68&sigh=E-_t8fX4805mqmlSA4S4WmO94Rs)](https://youtu.be/TV1uMyFlf_s?list=PLZHhaK4KCZZyocy6-b0Kq7LSrHP4cYV9q "Introdución a Odoo")  | [![IMAGE ALT TEXT](https://i.ytimg.com/vi/e9ypqOnx768/hqdefault.jpg?custom=true&w=120&h=90&jpg444=true&jpgq=90&sp=68&sigh=RCkMzKaVcpTJw8Zjy5CW7-URXf8)](https://youtu.be/e9ypqOnx768?list=PLZHhaK4KCZZyocy6-b0Kq7LSrHP4cYV9q "Relación many2many") | [![IMAGE ALT TEXT](https://i.ytimg.com/vi/j4T_o_qK87s/hqdefault.jpg?custom=true&w=120&h=90&jpg444=true&jpgq=90&sp=68&sigh=JIilm98hCRDFps2LAQZgOpirt-o)](https://youtu.be/j4T_o_qK87s?list=PLZHhaK4KCZZyocy6-b0Kq7LSrHP4cYV9q "Relación one2many") |
-
-
-
-
-   
