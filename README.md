@@ -1,4 +1,4 @@
-![logo](https://yt3.ggpht.com/-Pdd2Yc_w1cs/AAAAAAAAAAI/AAAAAAAAAAA/zPOludtwSjU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg,"Logo de juventud Productiva")![logo](https://tecnologiaeducativaunefa.files.wordpress.com/2012/02/unefa-sin-fondo1.png?w=103&h=150,"Logo de unefa")
+![logo](https://yt3.ggpht.com/-Pdd2Yc_w1cs/AAAAAAAAAAI/AAAAAAAAAAA/zPOludtwSjU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg,"Logo de juventud Productiva")![logo](https://tecnologiaeducativaunefa.files.wordpress.com/2012/02/unefa-sin-fondo1.png,"Logo de unefa")
 # curso odoo v8 <p>
 Este repositorio es el producto de un conjuntos de video tutoriales de odoo version 8,
 que esta disponibles en el cana de Youtube de [Juventud Prductiva](https://www.youtube.com/watch?v=jgCUW7w-G3o&list=PLZHhaK4KCZZyocy6-b0Kq7LSrHP4cYV9q)<p>
